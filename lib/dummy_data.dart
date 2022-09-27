@@ -53,4 +53,19 @@ const DUMMY_DATA = const [
     title: 'Summer',
     color: Colors.teal,
   ),
+  Category(
+    id: 'c11',
+    title: 'Indian',
+    color: Colors.white70,
+  ),
+  Category(
+    id: 'c12',
+    title: 'Rajisthani',
+    color: Colors.brown,
+  ),
+  Category(
+    id: 'c13',
+    title: 'Summer',
+    color: Colors.cyanAccent,
+  ),
 ];

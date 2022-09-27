@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/category_meal_screen.dart';
 import 'package:flutter_complete_guide/categry_screen.dart';
 
 void main() {
@@ -12,8 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Daily Meal',
       theme: ThemeData(
-        primarySwatch: Colors.teal,
-        accentColor: Colors.amber,
+        primarySwatch: Colors.pink,
+        accentColor: Colors.pinkAccent,
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
               bodyMedium: TextStyle(
@@ -39,8 +40,13 @@ class MyApp extends StatelessWidget {
                 fontFamily: 'RobotoCondensed',
               ),
             ),
+
       ),
       home: CategoryScreen(),
+      initialRoute: '/',
+      routes: {
+        CategoryMealScreen.routeName : (ctx) => CategoryMealScreen()
+      },
     );
   }
 }
